@@ -188,7 +188,7 @@ GitHub provides some official RSS feeds:
 
 ### Issue / Pull Request comments
 
-<Route namespace="github" data={{"path":"/comments/:user/:repo/:number?","categories":["programming"],"example":"/github/comments/DIYgod/RSSHub/8116","parameters":{"user":"User / Org name","repo":"Repo name","number":"Issue or pull number (if omitted: all)"},"radar":[{"source":["github.com/:user/:repo/:type"],"target":"/comments/:user/:repo"}],"name":"Issue / Pull Request comments","maintainers":["TonyRL","FliegendeWurst"],"location":"comments.ts"}} />
+<Route namespace="github" data={{"path":"/comments/:user/:repo/:number?","categories":["programming"],"example":"/github/comments/DIYgod/RSSHub/8116","parameters":{"user":"User / Org name","repo":"Repo name","number":"Issue or pull number (if omitted: all)"},"radar":[{"source":["github.com/:user/:repo/:type","github.com/:user/:repo/:type/:number"],"target":"/comments/:user/:repo/:number?"}],"name":"Issue / Pull Request comments","maintainers":["TonyRL","FliegendeWurst"],"location":"comments.ts"}} />
 
 ### Notifications
 
@@ -578,11 +578,11 @@ GitHub provides some official RSS feeds:
 
 ### Series
 
-<Route namespace="web" data={{"path":"/series/:seriesName","parameters":{"seriesName":"topic name in the series section"},"categories":["programming"],"example":"/web/series/new-to-the-web","radar":[{"source":["web.dev/series/:seriesName"],"target":"/series/:seriesName"}],"name":"Series","maintainers":["KarasuShin"],"description":":::tip\n    The `seriesName` can be extracted from the Series page URL: `https://web.dev/series/:seriesName`\n    :::","location":"series.ts"}} />
+<Route namespace="web" data={{"path":"/series/:seriesName","parameters":{"seriesName":"topic name in the series section"},"categories":["programming"],"example":"/web/series/new-to-the-web","radar":[{"source":["web.dev/series/:seriesName"],"target":"/series/:seriesName"}],"name":"Series","maintainers":["KarasuShin"],"description":":::tip\n    The `seriesName` can be extracted from the Series page URL: `https://web.dev/series/:seriesName`\n:::","location":"series.ts"}} />
 
 :::tip
     The `seriesName` can be extracted from the Series page URL: `https://web.dev/series/:seriesName`
-    :::
+:::
 
 ## 阿里云
 
